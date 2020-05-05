@@ -3,6 +3,8 @@ from bouton import *
 from json1 import *
 
 print("Salut les gens je m'appelle Naïko!")
+print("Et je suis une assitante virtuel!")
+
 print("le systeme pricipale est prêts!")
 print(json.dumps(x, indent=4))
 
