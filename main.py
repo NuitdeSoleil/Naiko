@@ -2,6 +2,7 @@ from tkinter import *
 from bouton import *
 from json1 import *
 
+print("Salut les gens je m'appelle Naïko!")
 print("le systeme pricipale est prêts!")
 print(json.dumps(x, indent=4))
 
@@ -18,6 +19,7 @@ photogavit = PhotoImage(file='assets/gravit.png')
 
 
     #on crée tous nos boutton avec les bonne couleur 
+
 asett = Button(ac, text=("SETTINGS"), bg='black', fg='white', command=settings, image=photosetings)
 adisc = Button(ac, text=("DISCORD"), bg='black', fg='white', command=discord, image=photodiscord)
 acalle = Button(ac, text=("CALENDRIER"), bg='black', fg='white', command=soon, image=photocalendrier)
