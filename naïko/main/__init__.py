@@ -1,5 +1,5 @@
 from tkinter import *
-from .json1 import *
+from .JSON2 import *
 
 nombre_lancement = 0
 print(nombre_lancement + 1)
