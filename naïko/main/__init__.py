@@ -1,5 +1,7 @@
 from tkinter import *
-from .JSON2 import *
+import tkinter as tk
+from tkinter import messagebox
+
 
 nombre_lancement = 0
 print(nombre_lancement + 1)
@@ -8,7 +10,7 @@ print("Salut les gens je m'appelle Naïko!")
 print("Et je suis une assitante virtuel!")
 
 print("le systeme pricipale est prêts!")
-print(json.dumps(x, indent=4))
+#print(json.dumps(x, indent=4))
 
 
 def soon():
@@ -20,6 +22,9 @@ def settings():
     sett.title("Settings")
     sett.geometry("800x480")
     sett.config(background='#830202')
+    lb = Listbox(sett, width=10, height=5)
+    lb.insert(1, "")
+    lb.pack()
     sett.mainloop()
 
 
@@ -82,14 +87,15 @@ class Main():
 
         #on fixe sur la grille tous nos boutton
     asett.place(x=45, y=60)
-    adisc.place(x=179, y=30)
-    acalle.place(x=334, y=30)
-    aRV.place(x=467, y=30)
+    adisc.place(x=250, y=60)
+    acalle.place(x=450, y=60)
+    aRV.place(x=625, y=60)
     aYT.place(x=45, y=300)
-    aGR.place(x=185, y=300)
-    aApv.place(x=467, y=300)
-    a8.place(x=345, y=300)
+    aGR.place(x=250, y=300)
+    aApv.place(x=625, y=300)
+    a8.place(x=450, y=300)
     ahelp.place(x=735, y=450)
 
 
     ac.mainloop()
+    #wesh wesh canne a peche
