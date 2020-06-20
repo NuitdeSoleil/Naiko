@@ -36,6 +36,7 @@ def discord():
     disc.mainloop()
 
 
+
 def youtube():
     you = Tk()
     you.title("Youtube")
@@ -63,7 +64,7 @@ def maj():
 class Main():
     ac = Tk()
     ac.geometry("800x480")
-    ac.config(background='black')
+    ac.config(background='#777777')
     ac.title("   ")
     photodiscord = PhotoImage(file='naïko/main/assets/discord.png')
     photosetings = PhotoImage(file='naïko/main/assets/settings.png')
@@ -78,14 +79,15 @@ class Main():
     asett = Button(ac, text=("SETTINGS"), bg='black', fg='white', command=settings, image=photosetings)
     adisc = Button(ac, text=("DISCORD"), bg='black', fg='white', command=discord, image=photodiscord)
     acalle = Button(ac, text=("CALENDRIER"), bg='black', fg='white', command=soon, image=photocalendrier)
-    aRV = Button(ac, text=("RETOUR VIDÉO"), bg='black', fg='white', command=maj, image=photocam)
+    aRV = Button(ac, text=("I WANT NEW IDEA PLEASE!"), bg='black', fg='white', command=maj)
     aYT = Button(ac, text=("YOUTUBE"), bg='black', fg='white', command=youtube, image=photoyoutube)
     aGR = Button(ac, text=("GRAVIT"), bg='black', fg='white', command=Gravit, image=photogavit )
     aApv = Button(ac, text=("APPELLE VIDÉO"), bg='black', fg='white', command=soon, image=photocam)
-    a8 = Button(ac, text=("APP N°8"), bg='black', fg='white', command=soon)
+    a8 = Button(ac, text=("Visionneuse d'images"), bg='black', fg='white', command=soon)
     ahelp = Button(ac, text=("about"), bg='black', fg='white', command=about)
 
         #on fixe sur la grille tous nos boutton
+
     asett.place(x=45, y=60)
     adisc.place(x=250, y=60)
     acalle.place(x=450, y=60)
@@ -95,6 +97,19 @@ class Main():
     aApv.place(x=625, y=300)
     a8.place(x=450, y=300)
     ahelp.place(x=735, y=450)
+
+        #on fais les labels qui vont être sous les img
+
+    settext = Label(ac, text='Settings', fg="white", bg='#777777')
+    disctext = Label(ac, text="Discord", fg='white', bg='#777777')
+    gravtext = Label(ac, text="Gravit", fg='white', bg='#777777')
+    epvtext = Label(ac, text="Appelle vidéo", fg='white', bg='#777777')
+    
+        #on fixe les labels sur la grille
+
+    settext.place(x=78, y=200)
+    disctext.place(x=289, y=200)
+    gravtext.place(x=300, y=600)
 
 
     ac.mainloop()
