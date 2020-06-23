@@ -26,6 +26,37 @@ def settings():
     lb.insert(1, "")
     lb.pack()
     sett.mainloop()
+def appvideo():
+    app  = Tk()
+    app.geometry('800x480')
+    app.config(bg='#888')
+    app.title('Appelle Vidéo')
+
+
+    micro = PhotoImage(file='naïko/main/assets/micro.png')
+
+
+
+    panel = PanedWindow(app, orient=HORIZONTAL)
+    panel.pack(side=TOP, expand=Y, fill=BOTH, pady=2, padx=2)
+    panel.add(Label(panel, text='                Contact                ', bg='#777', anchor=NW))
+    panel.add(Label(panel, text='Endroit avec la cam', bg='#555', anchor=CENTER))
+    panel.pack()
+
+    retour = Frame(app, borderwidth=2, relief=GROOVE, bg='purple')
+    retour.place(x=700, y=400)
+
+    retourL = Label(retour, text='R E T O U R', bg='purple')
+    retourL2 = Label(retour, text='R E T O U R', bg='purple')
+    retourL3 = Label(retour, text='R E T O U R', bg='purple')
+    retourL.pack()
+    retourL2.pack()
+    retourL3.pack()
+
+    micro2 = Button(app, text='couper micro', command=soon)
+    micro2.place(x=350 , y=400)
+
+    app.mainloop()
 
 
 def discord():
@@ -82,7 +113,7 @@ class Main():
     aRV = Button(ac, text=("I WANT NEW IDEA PLEASE!"), bg='black', fg='white', command=maj)
     aYT = Button(ac, text=("YOUTUBE"), bg='black', fg='white', command=youtube, image=photoyoutube)
     aGR = Button(ac, text=("GRAVIT"), bg='black', fg='white', command=Gravit, image=photogavit )
-    aApv = Button(ac, text=("APPELLE VIDÉO"), bg='black', fg='white', command=soon, image=photocam)
+    aApv = Button(ac, text=("APPELLE VIDÉO"), bg='black', fg='white', command=appvideo, image=photocam)
     a8 = Button(ac, text=("Visionneuse d'images"), bg='black', fg='white', command=soon)
     ahelp = Button(ac, text=("about"), bg='black', fg='white', command=about)
 
