@@ -10,3 +10,6 @@ si ce projet vous intérresse voissi notre discord et notre page GitHub!!
 Discord: https://discord.gg/zPHuXPY
 
 GitHub: 
+
+
+[![Run on Repl.it](https://repl.it/badge/github/NuitdeSoleil/Naiko)](https://repl.it/github/NuitdeSoleil/Naiko)
